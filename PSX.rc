@@ -1,0 +1,678 @@
+//Microsoft App Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#ifdef APSTUDIO_INVOKED
+//////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.rc""\r\n"
+    "#include ""afxprint.rc""\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.rc""\r\n"
+    "#include ""afxprint.rc""\r\n"
+    "\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+IDI_INIT                ICON    DISCARDABLE     "RES\\INITIAL.ICO"
+IDR_TEXTTYPE            ICON    DISCARDABLE     "RES\\TEXTTYPE.ICO"
+IDR_MAINFRAME           ICON    DISCARDABLE     "RES\\MAINFRAM.ICO"
+IDI_INI                 ICON    DISCARDABLE     "RES\\INI.ICO"
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  DISCARDABLE     "RES\\BITMAP1.BMP"
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Datei"
+    BEGIN
+        MENUITEM "&Neu...\tCtrl+N",             ID_FILE_NEW
+        MENUITEM "ö&ffnen...\tCtrl+O",          ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Letzte Datei",                ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Beenden",                    ID_APP_EXIT
+    END
+    POPUP "&Ansicht"
+    BEGIN
+        MENUITEM "&Werkzeugleiste",             ID_VIEW_TOOLBAR
+        MENUITEM "&Statuszeile",                ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+    END
+    POPUP "&Statistik"
+    BEGIN
+        POPUP "&Chi-Quadrat"
+        BEGIN
+            MENUITEM "4-&Felder",                   ID_VFCHI
+            MENUITEM "&McNemar",                    ID_MNCHI
+            MENUITEM "&Eindimensional",             ID_EDCHI
+            MENUITEM "&Mehrdimensional",            ID_MDCHI
+        END
+        POPUP "&t-Test"
+        BEGIN
+            MENUITEM "&Abhängig",                   ID_TTA
+            MENUITEM "&Unabhängig",                 ID_TTU
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Vertrauensbereiche",         ID_CL
+        MENUITEM SEPARATOR
+        POPUP "&Kombinatorik"
+        BEGIN
+            MENUITEM "&Variation",                  ID_KOMVAR
+            MENUITEM "&Permutation",                ID_KOMBPER
+            MENUITEM "&Kombination",                ID_KOMBKOMB
+        END
+        MENUITEM "&Bootstrap",                  ID_BOOTS
+    END
+    POPUP "&Teststatistik"
+    BEGIN
+        MENUITEM "&Verlängerung",               ID_VERL
+        MENUITEM SEPARATOR
+        POPUP "&Auslese"
+        BEGIN
+            MENUITEM "Vorhersage eines &Kriteriumswertes",ID_VHKRIT
+            MENUITEM "Vorhersage eines &Testwertes",ID_VHTEST
+        END
+        POPUP "&Vorhersage"
+        BEGIN
+            MENUITEM "&Reliabilitätsschätzung",     ID_RELI
+            MENUITEM "&Minderungskorrektur",        ID_MIND
+            MENUITEM "&Irrepräsentative Stichproben",ID_IRRST
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Scoredifferenzen",           ID_SCDIFF
+        MENUITEM SEPARATOR
+        MENUITEM "&Testprofile",                ID_TEPR
+        MENUITEM "Test&batterien",              ID_TEBATT
+    END
+    POPUP "Ta&bellen"
+    BEGIN
+        MENUITEM "&z-Werte",                    ID_TABELLEN_Z
+        MENUITEM "&t-Werte",                    ID_TABELLEN_T
+        MENUITEM "&Chi-Quadrat",                ID_TABELLEN_CHI
+        MENUITEM "&F-Werte",                    ID_TABELLEN_F
+        MENUITEM "F&ishers z'",                 ID_TABELLEN_FIZ
+        MENUITEM SEPARATOR
+        MENUITEM "Z&ufallszahl",                ID_TABELLEN_ZUFAL
+    END
+    POPUP "Hilfe"
+    BEGIN
+        MENUITEM "&Info",                       ID_APP_ABOUT
+    END
+END
+
+IDR_TEXTTYPE MENU DISCARDABLE 
+BEGIN
+    POPUP "&Datei"
+    BEGIN
+        MENUITEM "&Neu...\tCtrl+N",             ID_FILE_NEW
+        MENUITEM "ö&ffnen...\tCtrl+O",          ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "S&chließen",                  ID_FILE_CLOSE
+        MENUITEM "&Speichern\tCtrl+S",          ID_FILE_SAVE
+        MENUITEM "Speichern &unter...",         ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Drucken...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "Druck&ansicht...",            ID_FILE_PRINT_PREVIEW
+        MENUITEM "Druck&optionen...",           ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Letzte Datei",                ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Beenden",                    ID_APP_EXIT
+    END
+    POPUP "&Bearbeiten"
+    BEGIN
+        MENUITEM "&Rückgängig\tCtrl+Z",         ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "A&usschneiden\tCtrl+X",       ID_EDIT_CUT
+        MENUITEM "&Kopieren\tCtrl+C",           ID_EDIT_COPY
+        MENUITEM "E&infügen\tCtrl+V",           ID_EDIT_PASTE
+    END
+    POPUP "&Ansicht"
+    BEGIN
+        MENUITEM "&Werkzeugleiste",             ID_VIEW_TOOLBAR
+        MENUITEM "&Statuszeile",                ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Schriftarten",               ID_CHOOSE_FONT
+    END
+    POPUP "&Statistik"
+    BEGIN
+        POPUP "&Chi-Quadrat"
+        BEGIN
+            MENUITEM "4-&Felder",                   ID_VFCHI
+            MENUITEM "&McNemar",                    ID_MNCHI
+            MENUITEM "&Eindimensional",             ID_EDCHI
+            MENUITEM "&Mehrdimensional",            ID_MDCHI
+        END
+        POPUP "&t-Test"
+        BEGIN
+            MENUITEM "&Abhängig",                   ID_TTA
+            MENUITEM "&Unabhängig",                 ID_TTU
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Vertrauensbereiche",         ID_CL
+        MENUITEM SEPARATOR
+        POPUP "&Kombinatorik"
+        BEGIN
+            MENUITEM "&Variation",                  ID_KOMVAR
+            MENUITEM "&Permutation",                ID_KOMBPER
+            MENUITEM "&Kombination",                ID_KOMBKOMB
+        END
+        MENUITEM "&Bootstrap",                  ID_BOOTS
+    END
+    POPUP "&Teststatistik"
+    BEGIN
+        MENUITEM "&Verlängerung",               ID_VERL
+        MENUITEM SEPARATOR
+        POPUP "&Auslese"
+        BEGIN
+            MENUITEM "Vorhersage eines &Kriteriumswertes",ID_VHKRIT
+            MENUITEM "Vorhersage eines &Testwertes",ID_VHTEST
+        END
+        POPUP "&Vorhersage"
+        BEGIN
+            MENUITEM "&Reliabilitätsschätzung",     ID_RELI
+            MENUITEM "&Minderungskorrektur",        ID_MIND
+            MENUITEM "&Irrepräsentative Stichproben",ID_IRRST
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Scoredifferenzen",           ID_SCDIFF
+        MENUITEM SEPARATOR
+        MENUITEM "&Testprofile",                ID_TEPR
+        MENUITEM "Test&batterien",              ID_TEBATT
+    END
+    POPUP "Ta&bellen"
+    BEGIN
+        MENUITEM "&z-Werte",                    ID_TABELLEN_Z
+        MENUITEM "&t-Werte",                    ID_TABELLEN_T
+        MENUITEM "&Chi-Quadrat",                ID_TABELLEN_CHI
+        MENUITEM "&F-Werte",                    ID_TABELLEN_F
+        MENUITEM "F&ishers z'",                 ID_TABELLEN_FIZ
+        MENUITEM SEPARATOR
+        MENUITEM "Z&ufallszahl",                ID_TABELLEN_ZUFAL
+    END
+    POPUP "&Fenster"
+    BEGIN
+        MENUITEM "&Teilen",                     ID_WINDOW_SPLIT
+        MENUITEM SEPARATOR
+        MENUITEM "&Nebebeinander",              ID_WINDOW_TILE_VERT
+        MENUITEM "ü&bereinander",               ID_WINDOW_TILE_HORZ
+        MENUITEM "&überlappend",                ID_WINDOW_CASCADE
+        MENUITEM "&Symbole anordnen",           ID_WINDOW_ARRANGE
+    END
+    POPUP "Hilfe"
+    BEGIN
+        MENUITEM "&Info",                       ID_APP_ABOUT
+    END
+END
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY,CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY,CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY,CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY,CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY,CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY,CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY,ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY,SHIFT, NOINVERT
+    VK_F3,          ID_EDIT_REPEAT,         VIRTKEY,NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY,NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY,SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY,CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY,SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY,CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY,CONTROL, NOINVERT
+END
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SET_TABSTOPS DIALOG DISCARDABLE  3, 4, 161, 46
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Tab Stops"
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "&Tab Stops:",IDC_STATIC,6,14,37,8
+    EDITTEXT        IDC_EDIT_TABS,50,12,49,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,111,4,40,15
+    PUSHBUTTON      "Cancel",IDCANCEL,111,23,40,14
+END
+
+IDD_PAGE_SETUP DIALOG DISCARDABLE  0, 0, 195, 73
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Page Setup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Header:",IDC_STATIC,7,8,30,9
+    EDITTEXT        IDC_HEADER,37,7,106,13,ES_AUTOHSCROLL
+    CONTROL         "File Time",IDC_HEADER_FILE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,6,23,49,10
+    CONTROL         "System Time",IDC_HEADER_SYSTEM,"Button",
+                    BS_AUTORADIOBUTTON,58,23,61,10
+    LTEXT           "&Footer:",IDC_STATIC,7,41,29,9
+    EDITTEXT        IDC_FOOTER,37,40,106,13,ES_AUTOHSCROLL
+    CONTROL         "File Time",IDC_FOOTER_FILE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,6,56,49,10
+    CONTROL         "System Time",IDC_FOOTER_SYSTEM,"Button",
+                    BS_AUTORADIOBUTTON,58,56,61,10
+    DEFPUSHBUTTON   "OK",IDOK,147,5,42,14
+    PUSHBUTTON      "Cancel",IDCANCEL,147,23,42,14
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  40, 50, 287, 177
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "über das Programm..."
+FONT 8, "Century Gothic"
+BEGIN
+    CONTROL         "",IDC_BIGICON,"Button",BS_OWNERDRAW | WS_DISABLED,14,18,
+                    38,40
+    CTEXT           "PSXm  ",IDC_STATIC,136,10,21,8,NOT WS_GROUP
+    CTEXT           " (c) 1994,1995 by D.Schrausser",IDC_STATIC,88,45,112,8,
+                    NOT WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,48,105,192,1
+    LTEXT           "Speicher:",IDC_STATIC,64,125,40,8,NOT WS_GROUP
+    LTEXT           "(Avail mem)",IDC_AVAIL_MEM,136,125,72,8,NOT WS_GROUP
+    LTEXT           "Math Co-processor:",IDC_STATIC,64,135,64,8,NOT WS_GROUP
+    LTEXT           "(Math coprocessor)",IDC_MATH_COPR,136,135,80,8,NOT 
+                    WS_GROUP
+    LTEXT           "Festplatte:",IDC_STATIC,64,145,40,8,NOT WS_GROUP
+    LTEXT           "(Disk space)",IDC_DISK_SPACE,136,145,72,8,NOT WS_GROUP
+    DEFPUSHBUTTON   "OK",IDOK,232,30,32,15
+    CTEXT           "Psychologisch-statistische Methoden ",IDC_STATIC,88,25,
+                    120,8
+    CTEXT           "Entwicklungsversion  2.1",IDC_STATIC,104,35,88,8
+    CTEXT           "lizensiert an :",IDC_STATIC,120,65,48,8
+    CTEXT           "Dietmar Schrausser",IDS_LICENSEE_NAME,80,75,128,8
+    ICON            IDI_INI,IDC_STATIC,24,65,18,20
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,64,5,160,85
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,48,121,192,44
+END
+
+IDD_SPLASH DIALOG DISCARDABLE  55, 40, 263, 172
+STYLE WS_POPUP | WS_BORDER
+FONT 8, "Century Gothic"
+BEGIN
+    CONTROL         "",IDC_BIGICON,"Button",BS_OWNERDRAW | WS_DISABLED,16,10,
+                    38,40
+    LTEXT           " PSXm  2.1",IDC_STATIC,125,15,40,8,NOT WS_GROUP
+    LTEXT           "(c)  1994,1995 by Dietmar Schrausser",IDC_STATIC,88,40,
+                    114,8,NOT WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,48,100,184,1
+    CTEXT           "Dieses Computerprogramm ist urheberrechtlich",
+                    IDC_STATIC,56,110,182,8
+    CTEXT           "gesch\374tzt. Unbefugte Vervielf\344ltigung oder illegaler  ",
+                    IDC_STATIC,56,120,182,8
+    CTEXT           "Vertrieb dieses Produktes werden zivil und straf-",
+                    IDC_STATIC,56,130,182,8
+    CTEXT           "rechtlich verfolgt.",IDC_STATIC,56,140,182,8
+    LTEXT           "Psychologisch-statistische Methoden",IDC_STATIC,88,30,
+                    124,8
+    CTEXT           "Dietmar Schrausser",IDS_LICENSEE_NAME,88,70,112,8
+    CTEXT           "lizensiert an:",IDC_STATIC,120,55,48,8
+    ICON            IDI_INI,IDC_STATIC,25,64,18,20
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,72,10,144,79
+END
+
+IDD_MNCHI DIALOG DISCARDABLE  28, 45, 305, 133
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Chi-Quadrat McNemar"
+FONT 8, "Century Gothic"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITEFRAME,0,0,306,134
+    EDITTEXT        IDC_B,80,35,40,20,ES_AUTOHSCROLL
+    EDITTEXT        IDC_C,32,65,40,20,ES_AUTOHSCROLL
+    PUSHBUTTON      "Berechnen",IDC_BERECH,144,55,40,35
+    EDITTEXT        IDC_ERG1_TX,208,45,64,15,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | 0x1000
+    EDITTEXT        IDC_ERG2_TX,208,80,64,13,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | 0x1000
+    PUSHBUTTON      "L\366schen",IDC_NEU,16,110,120,10
+    PUSHBUTTON      "Beenden",IDOK,144,100,40,19
+    PUSHBUTTON      "Abbrechen",IDCANCEL,144,20,40,25
+    GROUPBOX        "Zellenbesetzung",IDC_STATIC,16,9,120,96
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITEFRAME,192,13,97,108
+    GROUPBOX        "Ergebnis",IDC_STATIC,192,9,96,111
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,200,24,79,86
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITERECT,201,26,77,83
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,32,35,40,20
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,80,65,40,20
+    LTEXT           "A",IDC_STATIC,40,40,8,8
+    LTEXT           "B",IDC_STATIC,88,70,8,8
+END
+
+IDD_VFCHI DIALOG DISCARDABLE  28, 45, 305, 133
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "4-Felder Chi-Quadrat"
+FONT 8, "Century Gothic"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITEFRAME,0,0,306,134
+    EDITTEXT        IDC_A,32,35,40,20,ES_AUTOHSCROLL
+    EDITTEXT        IDC_B,80,35,40,20,ES_AUTOHSCROLL
+    EDITTEXT        IDC_C,32,65,40,20,ES_AUTOHSCROLL
+    EDITTEXT        IDC_D,80,65,40,20,ES_AUTOHSCROLL
+    PUSHBUTTON      "Berechnen",IDC_BERECH,144,55,40,35
+    EDITTEXT        IDC_ERG1_TX,208,40,64,15,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | 0x1000
+    EDITTEXT        IDC_ERG2_TX,208,60,64,13,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | 0x1000
+    EDITTEXT        IDC_ERG3_TX,208,85,64,13,ES_AUTOHSCROLL | NOT WS_BORDER
+    PUSHBUTTON      "L\366schen",IDC_NEU,16,110,120,10
+    PUSHBUTTON      "Beenden",IDOK,144,100,40,19
+    PUSHBUTTON      "Abbrechen",IDCANCEL,144,20,40,25
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITEFRAME,16,13,121,93
+    GROUPBOX        "Zellenbesetzung",IDC_STATIC,16,9,120,95
+    GROUPBOX        "Ergebnis",IDC_STATIC,192,9,96,111
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,200,24,79,86
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITERECT,201,26,77,83
+END
+
+IDD_TTAB DIALOG DISCARDABLE  80, 60, 223, 108
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "t - Tabelle"
+FONT 8, "Century Gothic"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITEFRAME,0,0,225,109
+    EDITTEXT        IDC_TTABN,16,25,64,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TTABT,16,55,64,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   ">",IDC_BERECH,96,25,24,45
+    EDITTEXT        IDC_TTABERG,136,55,64,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "L\366schen",IDC_NEU,8,90,80,10
+    PUSHBUTTON      "Weiter",IDCANCEL,128,90,80,10
+    LTEXT           "Prozentrang:",IDC_STATIC,136,35,48,8
+    LTEXT           "t-Wert:",IDC_STATIC,16,45,30,8
+    LTEXT           "n:",IDC_STATIC,16,15,8,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,8,10,79,69
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,128,20,79,59
+END
+
+IDD_ZTAB DIALOG DISCARDABLE  80, 60, 223, 108
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "z - Tabelle"
+FONT 8, "Century Gothic"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITEFRAME,0,0,225,109
+    EDITTEXT        IDC_TTABT,16,55,64,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "-->",IDC_BERECH,96,25,24,45
+    EDITTEXT        IDC_TTABERG,136,55,64,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "L\366schen",IDC_NEU,8,90,80,10
+    PUSHBUTTON      "Weiter",IDCANCEL,128,90,80,10
+    LTEXT           "Prozentrang:",IDC_STATIC,136,35,48,8
+    LTEXT           "z-Wert:",IDC_STATIC,16,35,30,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,8,20,79,59
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,128,20,79,59
+END
+
+IDD_TTU DIALOG DISCARDABLE  15, 40, 336, 178
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Unabh�ngiger  t - Test"
+FONT 8, "Century Gothic"
+BEGIN
+    EDITTEXT        IDC_EDIT1,32,55,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,32,85,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,32,115,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,96,55,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,96,85,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,96,115,40,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Berechnen",IDC_BERECH,160,50,40,90
+    PUSHBUTTON      "L\366schen",IDC_NEU,16,155,136,9
+    GROUPBOX        "Eingabe",IDC_STATIC,16,15,136,135
+    PUSHBUTTON      "Beenden",IDOK,160,145,40,19
+    PUSHBUTTON      "Abbrechen",IDCANCEL,160,25,40,20
+    LTEXT           " x1 :",IDC_STATIC,32,45,30,8
+    LTEXT           "x2 :",IDC_STATIC,96,45,30,8
+    LTEXT           "s1 :",IDC_STATIC,32,75,30,8
+    LTEXT           "s2 :",IDC_STATIC,96,75,30,8
+    LTEXT           "n1 :",IDC_STATIC,32,105,30,8
+    LTEXT           "n2 :",IDC_STATIC,96,105,30,8
+    GROUPBOX        "Ergebnis",IDC_STATIC,208,20,112,130
+    PUSHBUTTON      "N\344heres",IDC_NAEH,208,155,112,9
+    EDITTEXT        IDC_EDIT7,224,55,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,224,115,80,13,ES_AUTOHSCROLL
+    LTEXT           "Signifikanzniveau :",IDC_STATIC,224,105,64,8
+    LTEXT           "t-Wert :",IDC_STATIC,224,45,30,8
+    EDITTEXT        IDC_EDIT9,224,85,64,13,ES_AUTOHSCROLL
+    LTEXT           "Varianzen :",IDC_STATIC,224,75,40,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,24,35,56,105
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,88,35,56,105
+END
+
+IDD_VAR DIALOG DISCARDABLE  55, 60, 250, 133
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Variation"
+FONT 8, "Century Gothic"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITEFRAME,0,0,251,134
+    EDITTEXT        IDC_N,32,45,56,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_K,32,80,56,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITEFRAME,112,40,25,66
+    DEFPUSHBUTTON   "-->",IDC_BERECH,112,40,24,65
+    CONTROL         "Mit Wiederholung",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,30,72,10
+    EDITTEXT        IDC_ERG,152,80,72,13,ES_AUTOHSCROLL
+    LTEXT           "Variationen :",IDC_STATIC,152,70,48,8
+    GROUPBOX        "Option",IDC_STATIC,144,9,88,41
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,144,60,88,45
+    LTEXT           "Elemente n :",IDC_STATIC,32,35,48,8
+    LTEXT           "Klassen k :",IDC_STATIC,32,70,48,8
+    PUSHBUTTON      "L\366schen",IDC_NEU,16,110,88,10
+    PUSHBUTTON      "Weiter",IDCANCEL,144,110,88,10
+    GROUPBOX        "Eingabe",IDC_STATIC,16,9,88,95
+END
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Erstellt ein neues Arbeitsblatt."
+    ID_FILE_OPEN            "\326ffnet eine bestehende Datei."
+    ID_FILE_CLOSE           "Schlie\337t die aktuelle Datei."
+    ID_FILE_SAVE            "Speichert die aktuelle Datei."
+    ID_FILE_SAVE_AS         "Speichert die aktuelle Datei unter angegebenem Namen."
+    ID_FILE_PRINT_SETUP     "\304ndert die Druckervoreinstellungen"
+    ID_FILE_PRINT           "Druckt die aktuelle Datei."
+    ID_FILE_PRINT_PREVIEW   "Zeigt die gesamten Seiten der aktuellen Datei."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Zeigt ""n\374tzliche"" Informationen \374ber das Programm."
+    ID_APP_EXIT             "Beendet PSXm."
+    ID_HELP_INDEX           "List Help topics"
+    ID_HELP_USING           "Display instructions about how to use help"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows"
+    ID_HELP                 "Display help for current task or command"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "\326ffnet die angegebene Datei."
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_ARRANGE       "R\344umt auf."
+    ID_WINDOW_CASCADE       "Zeigt die ge\366ffneten Fenster \374berlappend."
+    ID_WINDOW_TILE_HORZ     "Zeigt die ge\366ffneten Fenster \374bereinander."
+    ID_WINDOW_TILE_VERT     "Zeigt die ge\366ffneten Fenster nebeneinander."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection"
+    ID_EDIT_COPY            "Kopiert die markierte Textstelle."
+    ID_EDIT_CUT             "Macht sich mit der Schere an der Datei zu schaffen."
+    ID_EDIT_FIND            "Find the specified text"
+    ID_EDIT_PASTE           "F\374gt das Ausgeschnittene wieder ein..wo auch immer."
+    ID_EDIT_REPEAT          "Repeat last find command"
+    ID_EDIT_REPLACE         "Replace specific text with different text"
+    ID_EDIT_SELECT_ALL      "Select the entire document"
+    ID_EDIT_UNDO            "Macht den letzten Arbeitsschritt ungeschehen."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Entfernt oder erstellt die Werkzeugleiste."
+    ID_VIEW_STATUS_BAR      "Entfernt oder erstellt die Statuszeile."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PAGE_SETUP           "Set headers, footers, and margins"
+    ID_CHOOSE_PRINT_FONT    "Set font for printing"
+    ID_VFCHI                "Berechnet ein 4-Felder Chi-Quadrat"
+    ID_MNCHI                "Berechnet ein Chi-Quadrat McNemar."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "\304ndert die Gr\366\337e des Fensters."
+    AFX_IDS_SCMOVE          "\304ndert die Position des Fensters."
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "PSXm"
+    AFX_IDS_IDLEMESSAGE     "PSXm bereit...."
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "PSXm"
+    IDR_TEXTTYPE            "\nBlatt \nTEXT Document\nProtokolle (*.psm)\n.psm\nTextFileType\nTEXT File Type"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CHOOSE_FONT          "\304ndert die Schriftart."
+    ID_SET_TABSTOPS         "Set tab stops for this window"
+    ID_WORD_WRAP            "Toggle on/off word-wrap mode"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_ERR_GET_PRINTER_DC  "Cannot get printer device context."
+    IDP_ERR_GET_DEVICE_DEFAULTS "Cannot get printer device defaults."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MIRROR_DISPLAY_FONT  "Use same font for printing as for display"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DISK_SPACE_UNAVAIL  "Unavailable"
+    IDS_DISK_SPACE          "%lu KB frei"
+    IDS_MATH_COPR_NOTPRESENT "Nicht installiert"
+    IDS_MATH_COPR_PRESENT   "installiert"
+    IDS_AVAIL_MEM           "%lu KB frei"
+END
+
+
+#ifndef APSTUDIO_INVOKED
+////////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "afxres.rc"
+#include "afxprint.rc"
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
