@@ -1,0 +1,131 @@
+//{{NO_DEPENDENCIES}}
+// App Studio generated include file.
+// Used by PSX.RC
+//
+#define IDR_MAINFRAME                   1
+#define IDR_TEXTTYPE                    2
+#define IDD_PAGE_SETUP                  101
+#define IDC_AVAIL_MEM                   101
+#define IDC_NEU                         101
+#define IDB_BITMAP1                     102
+#define IDC_A                           102
+#define IDC_B                           103
+#define ID_MIRROR_DISPLAY_FONT          104
+#define IDC_LICENSEE_COMPANY            104
+#define IDD_VFCHI                       104
+#define IDC_LICENSEE_NAME               105
+#define IDD_SPLASH                      105
+#define IDI_INIT                        105
+#define IDC_D                           105
+#define IDC_MATH_COPR                   106
+#define IDI_TEXTTYPE                    106
+#define IDC_DISK_SPACE                  107
+#define IDD_RECHNER                     107
+#define IDD_MNCHI                       108
+#define IDD_TTAB                        109
+#define IDD_ZTAB                        110
+#define IDI_MAINFRAIM                   111
+#define IDI_MAINFRAME                   111
+#define IDD_TTU                         112
+#define IDD_VAR                         113
+#define IDC_BERECH                      114
+#define IDI_INI                         114
+#define IDC_ERG1_TX                     119
+#define IDC_ERG2_TX                     120
+#define IDC_ERG3_TX                     121
+#define IDD_ABOUTBOX                    512
+#define IDC_HEADER                      1002
+#define IDC_FOOTER                      1003
+#define ID_CHOOSE_FONT                  1004
+#define IDC_EDIT_TABS                   1004
+#define IDC_HEADER_FILE                 1004
+#define ID_SET_TABSTOPS                 1005
+#define IDC_HEADER_SYSTEM               1005
+#define ID_WORD_WRAP                    1006
+#define IDC_FOOTER_FILE                 1006
+#define IDC_FOOTER_SYSTEM               1007
+#define IDC_PROTO                       1007
+#define IDS_DISK_SPACE_UNAVAIL          1008
+#define IDC_BIGICON                     1008
+#define IDC_C                           1008
+#define IDS_DISK_SPACE                  1009
+#define IDC_BUTTON1                     1009
+#define IDD_SET_TABSTOPS                1010
+#define IDS_MATH_COPR_NOTPRESENT        1010
+#define IDC_BUTTON2                     1010
+#define IDC_NAEH                        1010
+#define IDS_MATH_COPR_PRESENT           1011
+#define IDC_BUTTON3                     1011
+#define IDS_AVAIL_MEM                   1012
+#define IDC_BUTTON4                     1012
+#define IDS_LICENSEE_COMPANY            1013
+#define IDC_BUTTON5                     1013
+#define IDS_LICENSEE_NAME               1014
+#define IDC_BUTTON6                     1014
+#define IDC_BUTTON7                     1015
+#define IDC_BUTTON8                     1016
+#define IDC_BUTTON9                     1017
+#define IDC_BUTTON10                    1018
+#define IDC_BUTTON11                    1019
+#define IDC_BUTTON12                    1020
+#define IDC_BUTTON13                    1021
+#define IDC_BUTTON14                    1022
+#define IDC_BUTTON15                    1023
+#define IDC_EDIT1                       1024
+#define IDC_TTABERG                     1024
+#define IDC_TTABT                       1034
+#define IDC_TTABN                       1035
+#define IDC_EDIT2                       1037
+#define IDC_EDIT3                       1038
+#define IDC_EDIT4                       1039
+#define IDC_EDIT5                       1040
+#define IDC_EDIT6                       1041
+#define IDC_EDIT7                       1042
+#define IDC_EDIT8                       1043
+#define IDC_EDIT9                       1044
+#define IDC_K                           1045
+#define IDC_N                           1046
+#define IDC_ERG                         1047
+#define IDC_CHECK1                      1048
+#define IDP_ERR_GET_PRINTER_DC          4000
+#define IDP_ERR_GET_DEVICE_DEFAULTS     4001
+#define ID_PAGE_SETUP                   32769
+#define ID_CHOOSE_PRINT_FONT            32770
+#define ID_VFCHI                        32771
+#define ID_MNCHI                        32772
+#define ID_TTA                          32773
+#define ID_TTU                          32774
+#define ID_EDCHI                        32775
+#define ID_MDCHI                        32776
+#define ID_CL                           32777
+#define ID_BOOTS                        32778
+#define ID_KOMVAR                       32779
+#define ID_KOMBPER                      32780
+#define ID_KOMBKOMB                     32781
+#define ID_VERL                         32782
+#define ID_VHKRIT                       32783
+#define ID_VHTEST                       32784
+#define ID_RELI                         32785
+#define ID_MIND                         32786
+#define ID_IRRST                        32787
+#define ID_SCDIFF                       32788
+#define ID_TEPR                         32789
+#define ID_TEBATT                       32790
+#define ID_TABELLEN_Z                   32793
+#define ID_TABELLEN_T                   32794
+#define ID_TABELLEN_CHI                 32795
+#define ID_TABELLEN_F                   32796
+#define ID_TABELLEN_FIZ                 32797
+#define ID_TABELLEN_ZUFAL               32798
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+
+#define _APS_NEXT_RESOURCE_VALUE        115
+#define _APS_NEXT_COMMAND_VALUE         32799
+#define _APS_NEXT_CONTROL_VALUE         1049
+#define _APS_NEXT_SYMED_VALUE           106
+#endif
+#endif 
