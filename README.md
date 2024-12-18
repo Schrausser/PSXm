@@ -1,6 +1,6 @@
 # PSXm
 
-`PSXm` statistical methods for Windows 3.1, beta version b2.1 from 1995. Developed in MS Visual C++ 1.0 (see Microsoft Corporation, 1993, also e.g. Ettinger, 1994).
+`PSXm` statistical methods for Windows 3.1, beta version v2.1-beta from 1995. Developed in MS Visual C++ 1.0 (see Microsoft Corporation, 1993, also e.g. Ettinger, 1994).
 
 Designed for the application of the fundamental and most important mathematical-statistical and probabilistic methods in the context of scientific psychology, in the field of research and diagnostics, see e.g. Bortz & Weber (2005), Bortz & Schuster (2010), respectively.
 
