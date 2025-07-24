@@ -1,3 +1,5 @@
+![figure.\label{ico}](psx.jpg)
+
 # PSXm
 
 `PSXm` statistical methods for Windows 3.1, beta version v2.1-beta from 1995. Developed in MS Visual C++ 1.0 (see Microsoft Corporation, [1993](https://archive.org/details/bitsavers_microsoftv93DB611530894VisualC1.0UsersGuideAug94_17580040), also e.g. Ettinger, [1994](https://doi.org/10.1007/978-1-349-23304-5)).
